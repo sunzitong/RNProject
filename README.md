@@ -85,7 +85,6 @@ test: test分支就供测试环境使用的分支。
 - **将SonarQube Scanner目录中的bin文件夹添加进环境变量中**
 
   - 打开~/.bash_profile, 如果没有新建一个
-  
 
     ```javascript
     export PATH="/Users/sunzitong/Documents/sonar-scanner-3.2.0.1227-macosx/bin:$PATH"
@@ -94,22 +93,22 @@ test: test分支就供测试环境使用的分支。
     // 改成你自己存放位置的地址
     ```
 
-- **自定义命令**
+- **新建一个shell并编辑**
 
-  - 新建一个shell并编辑
-```javascript
-// /Users/sunzitong/bash_profile_self/alias.sh 这是我本机shell文件的位置
+   ```javascript
+    // /Users/sunzitong/bash_profile_self/alias.sh 这是我本机shell文件的位置
 
-alias sonarQube='/Users/sunzitong/Documents/sonarqube-6.7.6/bin/macosx-universal-64/sonar.sh'
+    alias sonarQube='/Users/sunzitong/Documents/sonarqube-6.7.6/bin/macosx-universal-64/sonar.sh'
 
-// sonar.sh的路径指向你自己本地的位置
-```
-  - 编辑～/.bash_profile文件
-```javascript
-    // 在底部添加下面的命令，soucre地址为你自己的alias.sh的地址， 如果没有此文件新建一个即可
+    // sonar.sh的路径指向你自己本地的位置
+    ```
+- **编辑～/.bash_profile文件**
 
-    source ~/bash_profile_self/alias.sh
-```
+    ```javascript
+        // 在底部添加下面的命令，soucre地址为你自己的alias.sh的地址， 如果没有此文件新建一个即可
+
+        source ~/bash_profile_self/alias.sh
+    ```
 
 - **运行指令**
 
